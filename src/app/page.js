@@ -24,12 +24,11 @@ export default function Home() {
         >
           {Stations.map((Station, i) => (
             <li
+              key={i}
               style={{ color: 'white' }}
               onClick={() => setCurrentStation(Station)}
             >
-              <Link href={''} key={i}>
-                {Station.name}
-              </Link>
+              <Link href={''}>{Station.name}</Link>
             </li>
           ))}
         </div>

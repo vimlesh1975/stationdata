@@ -6,6 +6,7 @@ const ComponentContainer = ({ ComponentName }) => {
 
   return (
     <div>
+
       <ComponentName />
     </div>
   );

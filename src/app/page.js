@@ -20,7 +20,11 @@ export default function Home() {
       </h1>
       <div style={{ display: 'flex' }}>
         <div
-          style={{ width: 200, height: '90vh', backgroundColor: 'Highlight' }}
+          style={{
+            width: '12%',
+            height: '92vh',
+            backgroundColor: 'Highlight',
+          }}
         >
           {Stations.map((Station, i) => (
             <li
@@ -32,8 +36,9 @@ export default function Home() {
             </li>
           ))}
         </div>
-        <div style={{}}>
-          {currentStation.name}
+        <div>
+          <h3>This is {currentStation.name} Data</h3>
+
           <ComponentContainer ComponentName={currentStation.component} />
         </div>
       </div>
